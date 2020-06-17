@@ -5,7 +5,7 @@
   "main": "server/server.js",
   "scripts": {
     "dev": "nodemon",
-    "deploy": "gh-pages -d dist/bundle",
+    "deploy": "gh-pages -d dist",
     "build": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
