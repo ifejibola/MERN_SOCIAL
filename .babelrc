@@ -1,0 +1,11 @@
+// for converting ES6, for latest JS features
+{
+    "presets": [
+        "env",
+        "stage-2",
+        "react"
+    ],
+    "plugins": [
+        "react-hot-loader/babel"
+    ]
+}
