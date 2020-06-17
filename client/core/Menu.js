@@ -6,23 +6,23 @@ import IconButton from 'material-ui/IconButton'
 import HomeIcon from 'material-ui-icons/Home'
 import Button from 'material-ui/Button'
 import auth from './../auth/auth-helper'
-import {Link, withRouter} from 'react-router-dom'
+import { Link, withRouter } from 'react-router-dom'
 
 const isActive = (history, path) => {
   if (history.location.pathname == path)
-    return {color: '#ff4081'}
+    return { color: '#ff4081' }
   else
-    return {color: '#ffffff'}
+    return { color: '#ffffff' }
 }
-const Menu = withRouter(({history}) => (
+const Menu = withRouter(({ history }) => (
   <AppBar position="static">
     <Toolbar>
       <Typography type="title" color="inherit">
-        MERN Skeleton
+        MERN Social
       </Typography>
       <Link to="/">
         <IconButton aria-label="Home" style={isActive(history, "/")}>
-          <HomeIcon/>
+          <HomeIcon />
         </IconButton>
       </Link>
       <Link to="/users">
@@ -46,8 +46,8 @@ const Menu = withRouter(({history}) => (
             <Button style={isActive(history, "/user/" + auth.isAuthenticated().user._id)}>My Profile</Button>
           </Link>
           <Button color="inherit" onClick={() => {
-              auth.signout(() => history.push('/'))
-            }}>Sign out</Button>
+            auth.signout(() => history.push('/'))
+          }}>Sign out</Button>
         </span>)
       }
     </Toolbar>

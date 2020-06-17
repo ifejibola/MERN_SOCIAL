@@ -1,9 +1,9 @@
-export default ({markup, css}) => {
-    return `<!doctype html>
+export default ({ markup, css }) => {
+  return `<!doctype html>
       <html lang="en">
         <head>
           <meta charset="utf-8">
-          <title>MERN Skeleton</title>
+          <title>MERN SOCIAL</title>
           <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400">
           <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
           <style>
