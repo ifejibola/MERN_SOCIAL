@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "CRUD, SIGNUP, AUTHENTICATION, USERLIST, VISITOR LIMITED ACCESS",
   "main": "server/server.js",
+  "homepage": "https://ifejibola.github.io/MERN_SOCIAL",
   "scripts": {
     "dev": "nodemon",
     "deploy": "gh-pages -d dist",
