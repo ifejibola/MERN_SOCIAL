@@ -1,12 +1,12 @@
-import config from './../config/config'
+import config from '../config/config.js'
 import app from './express'
 import mongoose from 'mongoose'
 
 // Connection URL
 mongoose.Promise = global.Promise
-mongoose.connect(config.mongo.development.URI)
+mongoose.connect(config.mongo)
 mongoose.connection.on('error', () => {
-  throw new Error(`unable to connect to database: ${config.mongo.development.URI}`)
+  throw new Error(`unable to connect to database: ${config.mongo}`)
 })
 
 app.listen(config.PORT, (err) => {

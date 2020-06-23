@@ -76,7 +76,7 @@ const follow = (params, credentials, followId) => {
 }
 
 const unfollow = (params, credentials, unfollowId) => {
-  return fetch('/api/users/follow/', {
+  return fetch('/api/users/unfollow/', {
     method: 'PUT',
     headers: {
       'Accept': 'application/json',

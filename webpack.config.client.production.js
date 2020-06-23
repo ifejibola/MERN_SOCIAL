@@ -8,8 +8,8 @@ const config = {
         path.join(CURRENT_WORKING_DIR, 'client/main.js')
     ],
     output: {
-        path: path.join(CURRENT_WORKING_DIR , '/dist'),
-        filename: 'bundle.js',
+        path: path.join(CURRENT_WORKING_DIR, '/dist'),
+        filename: 'server.bundle.js',
         publicPath: "/dist/"
     },
     module: {

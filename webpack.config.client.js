@@ -12,8 +12,8 @@ const config = {
         path.join(CURRENT_WORKING_DIR, 'client/main.js')
     ],
     output: {
-        path: path.join(CURRENT_WORKING_DIR , '/dist'),
-        filename: 'bundle.js',
+        path: path.join(CURRENT_WORKING_DIR, '/dist'),
+        filename: 'server.bundle.js',
         publicPath: '/dist/'
     },
     module: {
@@ -30,10 +30,10 @@ const config = {
                 use: 'file-loader'
             }
         ]
-    },  plugins: [
-          new webpack.HotModuleReplacementPlugin(),
-          new webpack.NoEmitOnErrorsPlugin()
-      ]
+    }, plugins: [
+        new webpack.HotModuleReplacementPlugin(),
+        new webpack.NoEmitOnErrorsPlugin()
+    ]
 }
 
 module.exports = config

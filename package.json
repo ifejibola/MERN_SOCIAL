@@ -1,13 +1,13 @@
 {
-  "name": "creatingusers_auth",
+  "name": "mern_social",
   "version": "1.0.0",
   "description": "CRUD, SIGNUP, AUTHENTICATION, USERLIST, VISITOR LIMITED ACCESS",
   "main": "server/server.js",
-  "homepage": "https://ifejibola.github.io/MERN_SOCIAL",
+  "homepage": "https://mern-social-m.herokuapp.com/",
   "scripts": {
     "dev": "nodemon",
-    "deploy": "gh-pages -d dist",
-    "build": "npm run build",
+    "build": "webpack --config webpack.config.client.production.js && webpack --mode=production --config webpack.config.server.js",
+    "start": "NODE_ENV=production node ./dist/server.generated.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
